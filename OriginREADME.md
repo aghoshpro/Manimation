@@ -58,12 +58,12 @@ manim-render example_scenes.py OpeningManimExample
     git clone https://github.com/3b1b/manim.git
     cd manim
     pip install -e .
-    manimgl example_scenes.py OpeningManimExample
     ```
-
+4. Add `manimgl` to the system path in environmental path variables e.g., `C:\Users\arkag\AppData\Roaming\Python\Python310\Scripts\manimgl`
+5. RUN ```manimgl example_scenes.py OpeningManimExample```
 ### Mac OSX
 
-1. Install FFmpeg, LaTeX in terminal using homebrew.
+1. Install FFmpeg, LaTeX in terminal using homebrew. 
     ```sh
     brew install ffmpeg mactex
     ```
