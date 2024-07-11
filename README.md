@@ -13,7 +13,10 @@
 
 Manim is an engine for precise programmatic animations, designed for creating explanatory math videos.
 
-Note, there are two versions of manim.  This repository began as a personal project by the author of [3Blue1Brown](https://www.3blue1brown.com/) for the purpose of animating those videos, with video-specific code available [here](https://github.com/3b1b/videos).  In 2020 a group of developers forked it into what is now the [community edition](https://github.com/ManimCommunity/manim/), with a goal of being more stable, better tested, quicker to respond to community contributions, and all around friendlier to get started with. See [this page](https://docs.manim.community/en/stable/faq/installation.html#different-versions) for more details.
+Note, there are **two versions** of manim.  
+* This repository began as a personal project by the author of [3Blue1Brown](https://www.3blue1brown.com/) for the purpose of animating those videos, with video-specific code available [here](https://github.com/3b1b/videos).  
+
+* In 2020 a group of developers forked it into what is now the [community edition](https://github.com/ManimCommunity/manim/), with a goal of being more stable, better tested, quicker to respond to community contributions, and all around friendlier to get started with. See [this page](https://docs.manim.community/en/stable/faq/installation.html#different-versions) for more details.
 
 ## Installation
 > **WARNING:** These instructions are for ManimGL _only_. Trying to use these instructions to install [ManimCommunity/manim](https://github.com/ManimCommunity/manim) or instructions there to install this version will cause problems. You should first decide which version you wish to install, then only follow the instructions for your desired version.
@@ -25,7 +28,9 @@ Manim runs on Python 3.7 or higher.
 System requirements are [FFmpeg](https://ffmpeg.org/), [OpenGL](https://www.opengl.org/) and [LaTeX](https://www.latex-project.org) (optional, if you want to use LaTeX).
 For Linux, [Pango](https://pango.gnome.org) along with its development headers are required. See instruction [here](https://github.com/ManimCommunity/ManimPango#building).
 
-# My Hand-On Experience
+# My Hands-On Experience
+<html><div style="background-color:green;"><strong>&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Working Example</strong></div></html>
+
 ### Windows Installation
 
 1. [Install FFmpeg](https://www.wikihow.com/Install-FFmpeg-on-Windows).
@@ -33,33 +38,32 @@ For Linux, [Pango](https://pango.gnome.org) along with its development headers a
 3. Open `cmd` or `vscode` to clone the original repo like below or this one 
     ```sh
     git clone https://github.com/3b1b/manim.git
-3. Nevigate to folder and install the remaining Python packages.
+4. Nevigate to folder and install the remaining Python packages.
     ```sh
     cd ./path/repo
     pip install -e .
     ```
-4. Add `manimgl` to the system path varibles in environmental path variables e.g., `C:\Users\arkag\AppData\Roaming\Python\Python310\Scripts\manimgl` before running
+5. Finaly add `manimgl` to the system path variables in environmental path as in my case e.g., `C:\Users\arkag\AppData\Roaming\Python\Python310\Scripts\manimgl` is added.
 
-5. RUN in `cmd` or `vscode`
+6. RUN an example as mentioned in `example_scenes.py`.     This should pop up a window playing a simple scene.
 
     ```sh
     manimgl example_scenes.py OpeningManimExample
     ```
-6. To save the videos as `.mp4` files in local directory please set the `out_dir` at line no 86 in the `scene_file_writer.py` as follows,
 
-```
-        out_dir = self.output_directory or "./output/"
-```
+7. To save the videos as `.mp4` files in local directory please set the `out_dir` at **line86** in the `scene_file_writer.py` as follows,
 
-## Using manim
-* Open
-Try running the following:
-```sh
-manimgl example_scenes.py OpeningManimExample
-```
-This should pop up a window playing a simple scene.
+    ```sh
+    out_dir = self.output_directory or "./output/"
+    ```
+    Then run the follwing
 
-Some useful flags include:
+    ```sh
+    manimgl example_scenes.py OpeningManimExample -o
+    ```
+
+## More useful -tags
+
 * `-w` to write the scene to a file
 * `-o` to write the scene to a file and open the result
 * `-s` to skip to the end and just show the final frame.
@@ -67,11 +71,15 @@ Some useful flags include:
 * `-n <number>` to skip ahead to the `n`'th animation of a scene.
 * `-f` to make the playback window fullscreen
 
-Take a look at custom_config.yml for further configuration.  To add your customization, you can either edit this file, or add another file by the same name "custom_config.yml" to whatever directory you are running manim from.  For example [this is the one](https://github.com/3b1b/videos/blob/master/custom_config.yml) for 3blue1brown videos.  There you can specify where videos should be output to, where manim should look for image files and sounds you want to read in, and other defaults regarding style and video quality.
+Take a look at custom_config.yml for further configuration.  To add your customization, you can either edit this file, or add another file by the same name "custom_config.yml" to whatever directory you are running manim from.  
 
-Look through the [example scenes](https://3b1b.github.io/manim/getting_started/example_scenes.html) to get a sense of how it is used, and feel free to look through the code behind [3blue1brown videos](https://github.com/3b1b/videos) for a much larger set of example. Note, however, that developments are often made to the library without considering backwards compatibility with those old videos. To run an old project with a guarantee that it will work, you will have to go back to the commit which completed that project.
+For example [this is the one](https://github.com/3b1b/videos/blob/master/custom_config.yml) for 3blue1brown videos.  There you can specify where videos should be output to, where manim should look for image files and sounds you want to read in, and other defaults regarding style and video quality.
 
-### Documentation
+Look through the [example scenes](https://3b1b.github.io/manim/getting_started/example_scenes.html) to get a sense of how it is used, and feel free to look through the code behind [3blue1brown videos](https://github.com/3b1b/videos) for a much larger set of example.
+
+**Note**, however, that developments are often made to the library without considering backwards compatibility with those old videos. To run an old project with a guarantee that it will work, you will have to go back to the commit which completed that project.
+
+## Documentation
 Documentation is in progress at [3b1b.github.io/manim](https://3b1b.github.io/manim/). And there is also a Chinese version maintained by [**@manim-kindergarten**](https://manim.org.cn): [docs.manim.org.cn](https://docs.manim.org.cn/) (in Chinese).
 
 [manim-kindergarten](https://github.com/manim-kindergarten/) wrote and collected some useful extra classes and some codes of videos in [manim_sandbox repo](https://github.com/manim-kindergarten/manim_sandbox).
