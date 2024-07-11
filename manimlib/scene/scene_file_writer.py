@@ -83,7 +83,7 @@ class SceneFileWriter(object):
 
     # Output directories and files
     def init_output_directories(self) -> None:
-        out_dir = self.output_directory or ""
+        out_dir = self.output_directory or "./output/"
         scene_name = self.file_name or self.get_default_scene_name()
         if self.save_last_frame:
             image_dir = guarantee_existence(os.path.join(out_dir, "images"))
