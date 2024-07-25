@@ -44,27 +44,43 @@ For Linux, [Pango](https://pango.gnome.org) along with its development headers a
 
 To install Manim ([link](https://community.chocolatey.org/packages/manimce#install)), run the following command from the **cmd** or **powershell**
 
-- ```
-    choco install manimce
-  ```
-  That’s it, no further steps required. You can continue with installing the optional dependencies below.
+```
+choco install manimce
+```
 
-### 2. Optional dependencies
+That’s it, no further steps required. You can continue with installing the optional dependencies below.
 
-1. [Install FFmpeg](https://www.wikihow.com/Install-FFmpeg-on-Windows).
-2. Install a LaTeX distribution. [MiKTeX](https://miktex.org/download) is recommended.
-3. Open `cmd` or `vscode` to clone the original repo like below or this one
+```
+The install of manimce was successful.
+Software install location not explicitly set, could be in package or
+default install location if installer.
 
-   ```sh
-   git clone https://github.com/3b1b/manim.git
-   ```
+Chocolatey installed 5/5 packages.
+See the log for details (C:\ProgramData\chocolatey\logs\chocolatey.log).
 
-4. Navigate to folder and install the remaining Python packages.
-   ```sh
-   cd ./path/repo
-   pip install -e .
-   ```
-5. Finaly add `manimgl` to the system path variables in environmental path as in my case e.g., `C:\Users\arkag\AppData\Roaming\Python\Python310\Scripts\manimgl` is added.
+Installed:
+- manimce v0.18.1
+- python v3.11.9
+- python3 v3.11.9
+- ffmpeg v7.0.1
+- python311 v3.11.9
+
+PS C:\Windows\system32>
+```
+
+### 2. Install a LaTeX distribution
+
+- For Windows, the recommended LaTeX distribution is [MiKTeX](https://miktex.org/download).
+
+```
+choco install miktex.install
+```
+
+If you are concerned about disk space, there is an alternative, smaller distributions of LaTe which is a dedicated package for Manim based on TinyTeX which contains all the required packages that Manim interacts with.
+
+```
+choco install manim-latex
+```
 
 ## Working with Manim
 
