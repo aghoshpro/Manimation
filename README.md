@@ -86,7 +86,7 @@ manimgl example_scenes.py OpeningManimExample
    manimgl example_scenes.py OpeningManimExample -o
    ```
 
-### More useful -tags
+<!-- ### More useful -tags
 
 - `-w` to write the scene to a file
 - `-o` to write the scene to a file and open the result
@@ -101,9 +101,13 @@ For example [this is the one](https://github.com/3b1b/videos/blob/master/custom_
 
 Look through the [example scenes](https://3b1b.github.io/manim/getting_started/example_scenes.html) to get a sense of how it is used, and feel free to look through the code behind [3blue1brown videos](https://github.com/3b1b/videos) for a much larger set of example.
 
-**Note**, however, that developments are often made to the library without considering backwards compatibility with those old videos. To run an old project with a guarantee that it will work, you will have to go back to the commit which completed that project.
+**Note**, however, that developments are often made to the library without considering backwards compatibility with those old videos. To run an old project with a guarantee that it will work, you will have to go back to the commit which completed that project. -->
 
 ## Building Blocks Examples
+
+### 1. Circle
+
+<img src="./output/CreateCircle.mp4"/>
 
 ### 1. Polygons
 
@@ -112,8 +116,6 @@ Look through the [example scenes](https://3b1b.github.io/manim/getting_started/e
 ### 2. Graphs on numberline
 
 https://github.com/user-attachments/assets/4387782c-9c7b-491f-983f-c8f7f55138fd
-
-
 
 ## Ideas
 
