@@ -76,31 +76,53 @@ PS C:\Windows\system32>
 choco install miktex.install
 ```
 
-If you are concerned about disk space, there is an alternative, smaller distributions of LaTe which is a dedicated package for Manim based on TinyTeX which contains all the required packages that Manim interacts with.
-
-```
-choco install manim-latex
-```
-
 ## Working with Manim
 
-RUN an example as mentioned in `example_scenes.py`. This should pop up a window playing a simple scene.
+Run any class as mentioned in `scene.py` with following command. This should pop up a window playing a simple scene.
 
-```sh
-manimgl example_scenes.py OpeningManimExample
+```
+manim -pqk scene.py CreateCircle
 ```
 
-7. To save the videos as `.mp4` files in local directory please set the `out_dir` at **line86** in the `scene_file_writer.py` as follows,
+<img src="./output/CreateCircle_ManimCE_v0.18.1.gif"/>
 
-   ```sh
-   out_dir = self.output_directory or "./output/"
-   ```
+- To save the videos in local directory please set the `out_dir` at **line86** in the `scene_file_writer.py` as follows,
 
-   Then run the follwing
+### as `.gif` files
 
-   ```sh
-   manimgl example_scenes.py OpeningManimExample -o
-   ```
+```sh
+manim -pqh scene.py SquareAndCircle -o D:/workspace_Python/Manim/OUTPUT/Gif-filename --format gif
+```
+
+### as `.mp4` files
+
+```sh
+manim -pqh scene.py SquareAndCircle -o D:/workspace_Python/Manim/OUTPUT/Vid-filename --format mp4
+```
+
+### with `.png`
+
+```
+manim -pqh scene.py SquareAndCircle -s -o D:/workspace_Python/Manim/OUTPUT/Vid-filename --format mp4
+```
+
+### `help`
+
+```
+manim render --help
+```
+
+<!-- - To save the videos as `.mp4` files in local directory please set the `out_dir` at **line86** in the `scene_file_writer.py` as follows, -->
+
+<!-- ```sh
+out_dir = self.output_directory or "./output/"
+```
+
+Then run the follwing
+
+```sh
+manimgl example_scenes.py OpeningManimExample -o
+``` -->
 
 <!-- ### More useful -tags
 
@@ -121,13 +143,13 @@ Look through the [example scenes](https://3b1b.github.io/manim/getting_started/e
 
 ## Building Blocks Examples
 
-### 1. Circle
+### 1. Create Polygons
 
-<img src="./output/CreateCircle.mp4"/>
+<img src="./output/SquareAndCircle_ManimCE_v0.18.1.gif"/>
 
-### 1. Polygons
+### 2. Polygon Transformation
 
-<img src="./output/SquareToCircle.mp4_20240725_222131.gif"/>
+<img src="./output/SquareToCircle_ManimCE_v0.18.1.gif"/>
 
 ### 2. Graphs on numberline
 
