@@ -20,31 +20,53 @@ We are using [Manime Community Edition](https://github.com/ManimCommunity/manim/
 
 > We will follow the instructions to install [ManimCommunity](https://docs.manim.community/en/stable/installation.html)
 
-> **Note**: To install manim directly through pip, please pay attention to the name of the installed package. This repository is ManimGL of 3b1b. The package name is `manimgl` instead of `manim` or `manimlib`. Please use `pip install manimgl` to install the version in this repository.
+OR
 
-Manim runs on Python 3.7 or higher.
+> Follow the experience
+
+<!-- Manim runs on Python 3.7 or higher.
 
 System requirements are [FFmpeg](https://ffmpeg.org/), [OpenGL](https://www.opengl.org/) and [LaTeX](https://www.latex-project.org) (optional, if you want to use LaTeX).
-For Linux, [Pango](https://pango.gnome.org) along with its development headers are required. See instruction [here](https://github.com/ManimCommunity/ManimPango#building).
+For Linux, [Pango](https://pango.gnome.org) along with its development headers are required. See instruction [here](https://github.com/ManimCommunity/ManimPango#building). -->
 
-# My Hands-On Experience
+# My Hands-On Experience on Windows
 
 <!-- <html><div style="background-color:green;"><strong>&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Working Example</strong></div></html> -->
 
-### Windows Installation
+### Prerequisites
+
+### 0. Install `Chocolatey`
+
+- Open **cmd** or **terminal** and type `choco` to check if you have it already.
+- Else go to https://chocolatey.org/install#individual to install it
+
+### 1. Install `manimce`
+
+To install Manim ([link](https://community.chocolatey.org/packages/manimce#install)), run the following command from the **cmd** or **powershell**
+
+- ```
+    choco install manimce
+  ```
+  That’s it, no further steps required. You can continue with installing the optional dependencies below.
+
+### 2. Optional dependencies
 
 1. [Install FFmpeg](https://www.wikihow.com/Install-FFmpeg-on-Windows).
 2. Install a LaTeX distribution. [MiKTeX](https://miktex.org/download) is recommended.
 3. Open `cmd` or `vscode` to clone the original repo like below or this one
+
    ```sh
    git clone https://github.com/3b1b/manim.git
    ```
-4. Nevigate to folder and install the remaining Python packages.
+
+4. Navigate to folder and install the remaining Python packages.
    ```sh
    cd ./path/repo
    pip install -e .
    ```
 5. Finaly add `manimgl` to the system path variables in environmental path as in my case e.g., `C:\Users\arkag\AppData\Roaming\Python\Python310\Scripts\manimgl` is added.
+
+## Working with Manim
 
 6. RUN an example as mentioned in `example_scenes.py`. This should pop up a window playing a simple scene.
 
@@ -94,3 +116,7 @@ Is always welcome. As mentioned above, the [community edition](https://github.co
 ## License
 
 This project falls under the MIT license.
+
+```
+
+```
