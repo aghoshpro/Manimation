@@ -68,11 +68,11 @@ To install Manim ([link](https://community.chocolatey.org/packages/manimce#insta
 
 ## Working with Manim
 
-6. RUN an example as mentioned in `example_scenes.py`. This should pop up a window playing a simple scene.
+RUN an example as mentioned in `example_scenes.py`. This should pop up a window playing a simple scene.
 
-   ```sh
-   manimgl example_scenes.py OpeningManimExample
-   ```
+```sh
+manimgl example_scenes.py OpeningManimExample
+```
 
 7. To save the videos as `.mp4` files in local directory please set the `out_dir` at **line86** in the `scene_file_writer.py` as follows,
 
@@ -86,7 +86,7 @@ To install Manim ([link](https://community.chocolatey.org/packages/manimce#insta
    manimgl example_scenes.py OpeningManimExample -o
    ```
 
-## More useful -tags
+### More useful -tags
 
 - `-w` to write the scene to a file
 - `-o` to write the scene to a file and open the result
@@ -102,6 +102,22 @@ For example [this is the one](https://github.com/3b1b/videos/blob/master/custom_
 Look through the [example scenes](https://3b1b.github.io/manim/getting_started/example_scenes.html) to get a sense of how it is used, and feel free to look through the code behind [3blue1brown videos](https://github.com/3b1b/videos) for a much larger set of example.
 
 **Note**, however, that developments are often made to the library without considering backwards compatibility with those old videos. To run an old project with a guarantee that it will work, you will have to go back to the commit which completed that project.
+
+## Building Blocks Examples
+
+### 1. Number Line
+
+<img src="./output/SquareToCircle.mp4_20240725_222131.gif"/>
+
+### 2. Polygons
+
+[![Watch the video](https://raw.githubusercontent.com/username/repository/branch/path/to/thumbnail.jpg)](./output/GraphExample.mp4)
+
+## Ideas
+
+### Idea 02 - Simple Area Under Curve
+
+### Idea 01 - Mandelbrot Fractals Pattern
 
 ## Documentation
 
