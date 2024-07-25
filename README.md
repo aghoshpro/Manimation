@@ -105,13 +105,15 @@ Look through the [example scenes](https://3b1b.github.io/manim/getting_started/e
 
 ## Building Blocks Examples
 
-### 1. Number Line
+### 1. Polygons
 
 <img src="./output/SquareToCircle.mp4_20240725_222131.gif"/>
 
-### 2. Polygons
+### 2. Graphs on numberline
 
-[![Watch the video](https://raw.githubusercontent.com/username/repository/branch/path/to/thumbnail.jpg)](./output/GraphExample.mp4)
+https://github.com/user-attachments/assets/4387782c-9c7b-491f-983f-c8f7f55138fd
+
+
 
 ## Ideas
 
