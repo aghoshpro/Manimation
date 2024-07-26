@@ -48,7 +48,7 @@ run the following command from the **cmd** or **powershell** with _administrativ
 choco install manimce
 ```
 
-That’s it, no further steps required. You should get something like below.
+That’s it, no further steps are required. You should get something like below.
 
 ```
 The install of manimce was successful.
@@ -80,7 +80,7 @@ choco install miktex.install
 
 - Manim is an extremely versatile package. The following is an example `Scene` you can construct:
 
-- For example lets create a `CreateCircle` which will create a circle.
+- For example, let's create a `CreateCircle` which will create a circle.
 
   ```sh
   from manim import *
@@ -92,7 +92,7 @@ choco install miktex.install
           self.play(Create(circle))  # show the circle on screen
   ```
 
-- Save the code in a file called scene.py. Then, run the following in a terminal window:Run it with following command.
+- Save the code in a file called scene.py. Then, run it in a `terminal` or `cmd` with the following command,
 
   ```
   manim -pqk scene.py CreateCircle
@@ -110,26 +110,26 @@ choco install miktex.install
 choco render --help
 ```
 
-### Save the files in local `output` directory
+### Save the files in local `./path/output` directory
 
-<!-- - To save the videos in local directory please set the `out_dir` at **line86** in the `scene_file_writer.py` as follows, -->
+<!-- - To save the videos in the local directory please set the `out_dir` at **line86** in the `scene_file_writer.py` as follows, -->
 
 ### as `.gif` files
 
 ```sh
-manim -pqh scene.py SquareAndCircle -o D:/workspace_Python/Manim/output/Gif-filename --format gif
+manim -pqh scene.py SquareAndCircle -o Z:/Git_PhD/Manimation/output/Gif-filename --format gif
 ```
 
 ### as `.mp4` files
 
 ```sh
-manim -pqh scene.py SquareAndCircle -o D:/workspace_Python/Manim/output/Vid-filename --format mp4
+manim -pqh scene.py SquareAndCircle -o Z:/Git_PhD/Manimation/output/Vid-filename --format mp4
 ```
 
-### with `.png`
+### as `mp4` with  `.png` (-s)
 
 ```
-manim -pqh scene.py SquareAndCircle -s -o D:/workspace_Python/Manim/output/Vid-filename --format mp4
+manim -pqh scene.py SquareAndCircle -s -o Z:/Git_PhD/Manimation/output/Vid-filename --format mp4
 ```
 
 ### `help`
@@ -144,7 +144,7 @@ manim render --help
 out_dir = self.output_directory or "./output/"
 ```
 
-Then run the follwing
+Then run the following
 
 ```sh
 manimgl example_scenes.py OpeningManimExample -o
@@ -197,7 +197,7 @@ https://github.com/user-attachments/assets/4387782c-9c7b-491f-983f-c8f7f55138fd
 
 ## Documentation
 
-Documnetationn is in progress at [Docs](https://docs.manim.community/en/stable/)
+Documentation is in progress at [Docs](https://docs.manim.community/en/stable/)
 
 <!-- Documentation is in progress at [3b1b.github.io/manim](https://3b1b.github.io/manim/). And there is also a Chinese version maintained by [**@manim-kindergarten**](https://manim.org.cn): [docs.manim.org.cn](https://docs.manim.org.cn/) (in Chinese).
 
