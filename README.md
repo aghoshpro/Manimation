@@ -1,54 +1,54 @@
-# Manim Community
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./OUTPUT/Gif-filename_Black.gif">
+  <source media="(prefers-color-scheme: light)" srcset="./OUTPUT/Gif-filename_White.gif">
+  <img alt=OntoRaster Logo" src="./OUTPUT/Gif-filename_White.gif" style="width:auto;">
+</picture>
 
-<p align="center">
+<!-- <p align="center">
     <a href="https://github.com/3b1b/manim">
         <img src="https://raw.githubusercontent.com/3b1b/manim/master/logo/cropped.png">
     </a>
-</p>
+</p> -->
 
 [![pypi version](https://img.shields.io/pypi/v/manimgl?logo=pypi)](https://pypi.org/project/manimgl/)
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)](http://choosealicense.com/licenses/mit/)
-[![Manim Subreddit](https://img.shields.io/reddit/subreddit-subscribers/manim.svg?color=ff4301&label=reddit&logo=reddit)](https://www.reddit.com/r/manim/)
 [![Manim Discord](https://img.shields.io/discord/581738731934056449.svg?label=discord&logo=discord)](https://discord.com/invite/bYCyhM9Kz2)
 [![docs](https://github.com/3b1b/manim/workflows/docs/badge.svg)](https://3b1b.github.io/manim/)
 
 Manim is an engine for precise programmatic animations, designed for creating explanatory math videos. **Note**, there are **many versions** of manim are available. Check [this page](https://docs.manim.community/en/stable/faq/installation.html#different-versions) for more details.
 
-We are using [Manime Community Edition](https://github.com/ManimCommunity/manim/) developed in 2020 by a group of developers forked it from the [original work](https://github.com/3b1b/videos) by [3Blue1Brown](https://www.3blue1brown.com/), with a goal of being more stable, better tested, quicker to respond to community contributions, and all around friendlier to get started.
+We use [Manim Community Edition](https://github.com/ManimCommunity/manim/), forked from [original work](https://github.com/3b1b/videos) by [3Blue1Brown](https://www.3blue1brown.com/), in 2020 by a group of developers to make it more reliable, better tested, faster to respond to community additions, and easier to start. It's well maintained and documented.
 
-## Installation
+## Official Installations
 
 > We will follow the instructions to install [ManimCommunity](https://docs.manim.community/en/stable/installation.html)
 
 OR
-
-> Follow the experience
 
 <!-- Manim runs on Python 3.7 or higher.
 
 System requirements are [FFmpeg](https://ffmpeg.org/), [OpenGL](https://www.opengl.org/) and [LaTeX](https://www.latex-project.org) (optional, if you want to use LaTeX).
 For Linux, [Pango](https://pango.gnome.org) along with its development headers are required. See instruction [here](https://github.com/ManimCommunity/ManimPango#building). -->
 
-# My Hands-On Experience on Windows
+## Local Installation in Windows
 
 <!-- <html><div style="background-color:green;"><strong>&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Working Example</strong></div></html> -->
 
-### Prerequisites
+### 0. Check and Install `Chocolatey`
 
-### 0. Install `Chocolatey`
-
-- Open **cmd** or **terminal** and type `choco` to check if you have it already.
+- Open **cmd** or **terminal** with _administrative privilege_ and type `choco` to check if you have it already.
 - Else go to https://chocolatey.org/install#individual to install it
 
 ### 1. Install `manimce`
 
-To install Manim ([link](https://community.chocolatey.org/packages/manimce#install)), run the following command from the **cmd** or **powershell**
+To install Manim Community Edition ([link](https://community.chocolatey.org/packages/manimce#install)),
+run the following command from the **cmd** or **powershell** with _administrative privilege_
 
 ```
 choco install manimce
 ```
 
-That’s it, no further steps required. You can continue with installing the optional dependencies below.
+That’s it, no further steps required. You should get something like below.
 
 ```
 The install of manimce was successful.
@@ -68,25 +68,51 @@ Installed:
 PS C:\Windows\system32>
 ```
 
-### 2. Install a LaTeX distribution
+## 2. Install a LaTeX distribution
 
-- For Windows, the recommended LaTeX distribution is [MiKTeX](https://miktex.org/download).
+- For Windows, the recommended LaTeX distribution is [MiKTeX](https://miktex.org/download) to enable LaTeX in the manim videos.
 
-```
+```sh
 choco install miktex.install
 ```
 
-## Working with Manim
+## 3. Start Working with Manim
 
-Run any class as mentioned in `scene.py` with following command. This should pop up a window playing a simple scene.
+- Manim is an extremely versatile package. The following is an example `Scene` you can construct:
 
+- For example lets create a `CreateCircle` which will create a circle.
+
+  ```sh
+  from manim import *
+
+  class CreateCircle(Scene):
+      def construct(self):
+          circle = Circle()  # create a circle
+          circle.set_fill(PINK, opacity=0.5)  # set color and opacity
+          self.play(Create(circle))  # show the circle on screen
+  ```
+
+- Save the code in a file called scene.py. Then, run the following in a terminal window:Run it with following command.
+
+  ```
+  manim -pqk scene.py CreateCircle
+  ```
+
+  To see more options please check [Manim Community Edition](https://github.com/ManimCommunity/manim/?tab=readme-ov-file#command-line-arguments)
+
+* **Output**
+
+  <img src="./OUTPUT/CreateCircle_ManimCE_v0.18.1.gif"/>
+
+* To check more options of `manim` run the following,
+
+```sh
+choco render --help
 ```
-manim -pqk scene.py CreateCircle
-```
 
-<img src="./output/CreateCircle_ManimCE_v0.18.1.gif"/>
+### Save the files in local `OUTPUT` directory
 
-- To save the videos in local directory please set the `out_dir` at **line86** in the `scene_file_writer.py` as follows,
+<!-- - To save the videos in local directory please set the `out_dir` at **line86** in the `scene_file_writer.py` as follows, -->
 
 ### as `.gif` files
 
@@ -115,7 +141,7 @@ manim render --help
 <!-- - To save the videos as `.mp4` files in local directory please set the `out_dir` at **line86** in the `scene_file_writer.py` as follows, -->
 
 <!-- ```sh
-out_dir = self.output_directory or "./output/"
+out_dir = self.output_directory or "./OUTPUT/"
 ```
 
 Then run the follwing
@@ -141,31 +167,41 @@ Look through the [example scenes](https://3b1b.github.io/manim/getting_started/e
 
 **Note**, however, that developments are often made to the library without considering backwards compatibility with those old videos. To run an old project with a guarantee that it will work, you will have to go back to the commit which completed that project. -->
 
-## Building Blocks Examples
+## 4. More Basic Examples
 
-### 1. Create Polygons
+### Create Polygons
 
-<img src="./output/SquareAndCircle_ManimCE_v0.18.1.gif"/>
+<img src="./OUTPUT/SquareAndCircle_ManimCE_v0.18.1.gif"/>
 
-### 2. Polygon Transformation
+### Polygon Transformation
 
-<img src="./output/SquareToCircle_ManimCE_v0.18.1.gif"/>
+<img src="./OUTPUT/SquareToCircle_ManimCE_v0.18.1.gif"/>
 
-### 2. Graphs on numberline
+### Writing Text [Docs](https://docs.manim.community/en/stable/reference/manim.animation.creation.html)
+
+<img src="./OUTPUT/Gif-Text.gif"/>
+
+### Graphs [Docs](https://docs.manim.community/en/stable/reference/manim.mobject.graph.html)
+
+<img src="./OUTPUT/Gif-filename-Graph.gif"/>
+
+### Numberline
 
 https://github.com/user-attachments/assets/4387782c-9c7b-491f-983f-c8f7f55138fd
 
 ## Ideas
 
-### Idea 02 - Simple Area Under Curve
+### Idea 01 - Simple Area Under Curve
 
-### Idea 01 - Mandelbrot Fractals Pattern
+### Idea 02 - Mandelbrot Fractals Pattern
 
 ## Documentation
 
-Documentation is in progress at [3b1b.github.io/manim](https://3b1b.github.io/manim/). And there is also a Chinese version maintained by [**@manim-kindergarten**](https://manim.org.cn): [docs.manim.org.cn](https://docs.manim.org.cn/) (in Chinese).
+Documnetationn is in progress at [Docs](https://docs.manim.community/en/stable/)
 
-[manim-kindergarten](https://github.com/manim-kindergarten/) wrote and collected some useful extra classes and some codes of videos in [manim_sandbox repo](https://github.com/manim-kindergarten/manim_sandbox).
+<!-- Documentation is in progress at [3b1b.github.io/manim](https://3b1b.github.io/manim/). And there is also a Chinese version maintained by [**@manim-kindergarten**](https://manim.org.cn): [docs.manim.org.cn](https://docs.manim.org.cn/) (in Chinese).
+
+[manim-kindergarten](https://github.com/manim-kindergarten/) wrote and collected some useful extra classes and some codes of videos in [manim_sandbox repo](https://github.com/manim-kindergarten/manim_sandbox). -->
 
 ## Contributing
 
@@ -174,7 +210,3 @@ Is always welcome. As mentioned above, the [community edition](https://github.co
 ## License
 
 This project falls under the MIT license.
-
-```
-
-```
