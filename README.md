@@ -106,9 +106,9 @@ choco install miktex.install
 
 * To check more options of `manim` run the following,
 
-```sh
-choco render --help
-```
+  ```sh
+   manim render --help
+  ```
 
 ### Save the files in the local directory with desired `./path/output` 
 
@@ -131,12 +131,6 @@ manim -pqh scene.py SquareAndCircle -o Z:/Git_PhD/Manimation/output/filename02 -
 ```
 manim -pqh scene.py SquareAndCircle -s -o Z:/Git_PhD/Manimation/output/filename03 --format mp4
 ```
-
-### `help`
-
-  ```
-  manim render --help
-  ```
 
 <!-- - To save the videos as `.mp4` files in local directory please set the `out_dir` at **line86** in the `scene_file_writer.py` as follows, -->
 
