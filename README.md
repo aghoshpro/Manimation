@@ -84,7 +84,7 @@ choco install miktex.install
   git clone https://github.com/aghoshpro/Manimation.git
   ```
 
-- Initially one has to create `scene.py` file which will contain the animations as classes. For example, let's create a class named `CreateCircle` which will draw a circle.
+- Initially one has to create `scene.py` file which will contain the animations as classes. Here `scene.py` is created in the repo and now let's create a class named `CreateCircle` which will draw a circle.
 
   ```sh
   from manim import *
@@ -169,19 +169,19 @@ Look through the [example scenes](https://3b1b.github.io/manim/getting_started/e
 
 ## 4. More Basic Examples
 
-### Create Polygons
+### Equations ([Docs](https://docs.manim.community/en/stable/reference/manim.mobject.text.tex_mobject.MathTex.html))
 
-<img src="./output/SquareAndCircle_ManimCE_v0.18.1.gif"/>
+<img src="./output/Equation_ManimCE_v0.18.0.gif"/>
 
 ### Polygon Transformation
 
 <img src="./output/SquareToCircle_ManimCE_v0.18.1.gif"/>
 
-### Writing Text [Docs](https://docs.manim.community/en/stable/reference/manim.animation.creation.html)
+### Writing Text ([Docs](https://docs.manim.community/en/stable/reference/manim.animation.creation.html))
 
 <img src="./output/Gif-Text.gif"/>
 
-### Graphs [Docs](https://docs.manim.community/en/stable/reference/manim.mobject.graph.html)
+### Graphs ([Docs](https://docs.manim.community/en/stable/reference/manim.mobject.graph.html))
 
 <img src="./output/Gif-filename-Graph.gif"/>
 
