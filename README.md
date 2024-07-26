@@ -1,7 +1,7 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./OUTPUT/Gif-filename_Black.gif">
-  <source media="(prefers-color-scheme: light)" srcset="./OUTPUT/Gif-filename_White.gif">
-  <img alt=OntoRaster Logo" src="./OUTPUT/Gif-filename_White.gif" style="width:auto;">
+  <source media="(prefers-color-scheme: dark)" srcset="./output/Gif-filename_Black.gif">
+  <source media="(prefers-color-scheme: light)" srcset="./output/Gif-filename_White.gif">
+  <img alt=OntoRaster Logo" src="./output/Gif-filename_White.gif" style="width:auto;">
 </picture>
 
 <!-- <p align="center">
@@ -102,7 +102,7 @@ choco install miktex.install
 
 * **Output**
 
-  <img src="./OUTPUT/CreateCircle_ManimCE_v0.18.1.gif"/>
+  <img src="./output/CreateCircle_ManimCE_v0.18.1.gif"/>
 
 * To check more options of `manim` run the following,
 
@@ -110,26 +110,26 @@ choco install miktex.install
 choco render --help
 ```
 
-### Save the files in local `OUTPUT` directory
+### Save the files in local `output` directory
 
 <!-- - To save the videos in local directory please set the `out_dir` at **line86** in the `scene_file_writer.py` as follows, -->
 
 ### as `.gif` files
 
 ```sh
-manim -pqh scene.py SquareAndCircle -o D:/workspace_Python/Manim/OUTPUT/Gif-filename --format gif
+manim -pqh scene.py SquareAndCircle -o D:/workspace_Python/Manim/output/Gif-filename --format gif
 ```
 
 ### as `.mp4` files
 
 ```sh
-manim -pqh scene.py SquareAndCircle -o D:/workspace_Python/Manim/OUTPUT/Vid-filename --format mp4
+manim -pqh scene.py SquareAndCircle -o D:/workspace_Python/Manim/output/Vid-filename --format mp4
 ```
 
 ### with `.png`
 
 ```
-manim -pqh scene.py SquareAndCircle -s -o D:/workspace_Python/Manim/OUTPUT/Vid-filename --format mp4
+manim -pqh scene.py SquareAndCircle -s -o D:/workspace_Python/Manim/output/Vid-filename --format mp4
 ```
 
 ### `help`
@@ -141,7 +141,7 @@ manim render --help
 <!-- - To save the videos as `.mp4` files in local directory please set the `out_dir` at **line86** in the `scene_file_writer.py` as follows, -->
 
 <!-- ```sh
-out_dir = self.output_directory or "./OUTPUT/"
+out_dir = self.output_directory or "./output/"
 ```
 
 Then run the follwing
@@ -171,19 +171,19 @@ Look through the [example scenes](https://3b1b.github.io/manim/getting_started/e
 
 ### Create Polygons
 
-<img src="./OUTPUT/SquareAndCircle_ManimCE_v0.18.1.gif"/>
+<img src="./output/SquareAndCircle_ManimCE_v0.18.1.gif"/>
 
 ### Polygon Transformation
 
-<img src="./OUTPUT/SquareToCircle_ManimCE_v0.18.1.gif"/>
+<img src="./output/SquareToCircle_ManimCE_v0.18.1.gif"/>
 
 ### Writing Text [Docs](https://docs.manim.community/en/stable/reference/manim.animation.creation.html)
 
-<img src="./OUTPUT/Gif-Text.gif"/>
+<img src="./output/Gif-Text.gif"/>
 
 ### Graphs [Docs](https://docs.manim.community/en/stable/reference/manim.mobject.graph.html)
 
-<img src="./OUTPUT/Gif-filename-Graph.gif"/>
+<img src="./output/Gif-filename-Graph.gif"/>
 
 ### Numberline
 
