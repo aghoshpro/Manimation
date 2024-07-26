@@ -110,33 +110,33 @@ choco install miktex.install
 choco render --help
 ```
 
-### Save the files in local `./path/output` directory
+### Save the files in the local directory with desired `./path/output` 
 
 <!-- - To save the videos in the local directory please set the `out_dir` at **line86** in the `scene_file_writer.py` as follows, -->
 
 ### as `.gif` files
 
 ```sh
-manim -pqh scene.py SquareAndCircle -o Z:/Git_PhD/Manimation/output/Gif-filename --format gif
+manim -pqh scene.py SquareAndCircle -o Z:/Git_PhD/Manimation/output/filename01 --format gif
 ```
 
 ### as `.mp4` files
 
 ```sh
-manim -pqh scene.py SquareAndCircle -o Z:/Git_PhD/Manimation/output/Vid-filename --format mp4
+manim -pqh scene.py SquareAndCircle -o Z:/Git_PhD/Manimation/output/filename02 --format mp4
 ```
 
 ### as `mp4` with  `.png` (-s)
 
 ```
-manim -pqh scene.py SquareAndCircle -s -o Z:/Git_PhD/Manimation/output/Vid-filename --format mp4
+manim -pqh scene.py SquareAndCircle -s -o Z:/Git_PhD/Manimation/output/filename03 --format mp4
 ```
 
 ### `help`
 
-```
-manim render --help
-```
+  ```
+  manim render --help
+  ```
 
 <!-- - To save the videos as `.mp4` files in local directory please set the `out_dir` at **line86** in the `scene_file_writer.py` as follows, -->
 
@@ -159,7 +159,7 @@ manimgl example_scenes.py OpeningManimExample -o
 - `-n <number>` to skip ahead to the `n`'th animation of a scene.
 - `-f` to make the playback window fullscreen
 
-Take a look at custom_config.yml for further configuration. To add your customization, you can either edit this file, or add another file by the same name "custom_config.yml" to whatever directory you are running manim from.
+Take a look at custom_config.yml for further configuration. To add your customization, you can either edit this file or add another file by the same name "custom_config.yml" to whatever directory you are running manim from.
 
 For example [this is the one](https://github.com/3b1b/videos/blob/master/custom_config.yml) for 3blue1brown videos. There you can specify where videos should be output to, where manim should look for image files and sounds you want to read in, and other defaults regarding style and video quality.
 
