@@ -78,9 +78,13 @@ choco install miktex.install
 
 ## 3. Start Working with Manim
 
-- Manim is an extremely versatile package. The following is an example `Scene` you can construct:
+- Open `terminal` or `cmd` and clone this repo
 
-- For example, let's create a `CreateCircle` which will create a circle.
+  ```
+  git clone https://github.com/aghoshpro/Manimation.git
+  ```
+
+- Initially one has to create `scene.py` file which will contain the animations as classes. For example, let's create a class named `CreateCircle` which will draw a circle.
 
   ```sh
   from manim import *
@@ -92,7 +96,7 @@ choco install miktex.install
           self.play(Create(circle))  # show the circle on screen
   ```
 
-- Save the code in a file called scene.py. Then, run it in a `terminal` or `cmd` with the following command,
+- Save the code in scene.py. Then, run it with the following command,
 
   ```
   manim -pqk scene.py CreateCircle
@@ -104,13 +108,15 @@ choco install miktex.install
 
   <img src="./output/CreateCircle_ManimCE_v0.18.1.gif"/>
 
-* To check more options of `manim` run the following,
+* To check the structure and options of `manim` run the following,
 
   ```sh
    manim render --help
   ```
 
-### Save the files in the local directory with desired `./path/output` 
+## 4. Saving
+
+### Save the files in the local directory with desired `./path/output`
 
 <!-- - To save the videos in the local directory please set the `out_dir` at **line86** in the `scene_file_writer.py` as follows, -->
 
@@ -126,7 +132,7 @@ manim -pqh scene.py SquareAndCircle -o Z:/Git_PhD/Manimation/output/filename01 -
 manim -pqh scene.py SquareAndCircle -o Z:/Git_PhD/Manimation/output/filename02 --format mp4
 ```
 
-### as `mp4` with  `.png` (-s)
+### as `mp4` with `.png` (-s)
 
 ```
 manim -pqh scene.py SquareAndCircle -s -o Z:/Git_PhD/Manimation/output/filename03 --format mp4
