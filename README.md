@@ -19,18 +19,19 @@ Manim is an engine for precise programmatic animations, designed for creating ex
 
 We use [Manim Community Edition](https://github.com/ManimCommunity/manim/), forked from [original work](https://github.com/3b1b/videos) by [3Blue1Brown](https://www.3blue1brown.com/), in 2020 by a group of developers to make it more reliable, better tested, faster to respond to community additions, and easier to start. It's well maintained and documented.
 
-## Official Installations
+## Installations
 
-> We will follow the instructions to install [ManimCommunity](https://docs.manim.community/en/stable/installation.html)
+### Official
+One can follow the instructions to install [ManimCommunity](https://docs.manim.community/en/stable/installation.html) but can also follow the instrutions below for windows which worked for me.
 
-OR
+**OR**
 
 <!-- Manim runs on Python 3.7 or higher.
 
 System requirements are [FFmpeg](https://ffmpeg.org/), [OpenGL](https://www.opengl.org/) and [LaTeX](https://www.latex-project.org) (optional, if you want to use LaTeX).
 For Linux, [Pango](https://pango.gnome.org) along with its development headers are required. See instruction [here](https://github.com/ManimCommunity/ManimPango#building). -->
 
-## Local Installation in Windows
+### For Windows
 
 <!-- <html><div style="background-color:green;"><strong>&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Working Example</strong></div></html> -->
 
@@ -191,9 +192,14 @@ https://github.com/user-attachments/assets/4387782c-9c7b-491f-983f-c8f7f55138fd
 
 ## Ideas
 
+Here we suggest any math topic on which we want create video using Manim and publish oon youtube. I have included some example but add or replace them as you wish.
+Suggested topics topics should be from simple to hard.
+
 ### Idea 01 - Simple Area Under Curve
 
 ### Idea 02 - Mandelbrot Fractals Pattern
+* https://mathigon.org/course/fractals/mandelbrot
+* https://en.wikipedia.org/wiki/Mandelbrot_set
 
 ## Documentation
 
