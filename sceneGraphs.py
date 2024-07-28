@@ -18,3 +18,13 @@ class NumberLine(Scene):
 
         self.play(Write(axes, lag_ratio=0.01, run_time=2))
         
+class AreaUnderCurve(Scene):
+      def construct(self):
+        ax = Axes(x_range=(-5, 5), y_range=(-5, 5), axis_config={"include_numbers": True})
+        curve = ax.plot(lambda x: (x+5/2)*x*(x-5/2)/2, color = RED)
+        area = ax.get_area(curve, x_range=(-2.5, 2.5))
+        plane = NumberPlane()
+        
+        self.play(Create(ax, run_time = 2), Create(curve, run_time = 3))
+        self.play(FadeIn(area))
+        self.wait(2)

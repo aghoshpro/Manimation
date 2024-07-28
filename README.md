@@ -19,25 +19,23 @@ Manim is an engine for precise programmatic animations, designed for creating ex
 
 We use [Manim Community Edition](https://github.com/ManimCommunity/manim/), forked from [original work](https://github.com/3b1b/videos) by [3Blue1Brown](https://www.3blue1brown.com/), in 2020 by a group of developers to make it more reliable, better tested, faster to respond to community additions, and easier to start. It's well-maintained and documented.
 
-## Official Installations
+## 1. Installations
 
-One can follow the instructions to install [ManimCommunity](https://docs.manim.community/en/stable/installation.html) for any Os. You can also follow the step-by-step win-installation that worked for me.
+One can follow the instructions to install [ManimCommunity](https://docs.manim.community/en/stable/installation.html) for any Os. Although, I have included the step-by-step installation for windows that worked for me.
 
 <!-- Manim runs on Python 3.7 or higher.
 
 System requirements are [FFmpeg](https://ffmpeg.org/), [OpenGL](https://www.opengl.org/) and [LaTeX](https://www.latex-project.org) (optional, if you want to use LaTeX).
 For Linux, [Pango](https://pango.gnome.org) along with its development headers are required. See instruction [here](https://github.com/ManimCommunity/ManimPango#building). -->
 
-### For Windows
-
 <!-- <html><div style="background-color:green;"><strong>&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Working Example</strong></div></html> -->
 
-### 0. Check and Install `Chocolatey`
+### 1.1. Check and Install `Chocolatey`
 
 - Open **cmd** or **terminal** with _administrative privilege_ and type `choco` to check if you have it already.
 - Else go to https://chocolatey.org/install#individual to install it
 
-### 1. Install `manimce`
+### 1.2. Install `manimce`
 
 To install Manim Community Edition ([link](https://community.chocolatey.org/packages/manimce#install)),
 run the following command from the **cmd** or **powershell** with _administrative privilege_
@@ -64,6 +62,14 @@ Installed:
 - python311 v3.11.9
 
 PS C:\Windows\system32>
+```
+
+### 1.3. Update pkg
+
+To upgrade manim pkg to it's latest version consider using -
+
+```sh
+pip install -U manim
 ```
 
 ## 2. Install a LaTeX distribution
@@ -114,23 +120,23 @@ choco install miktex.install
 
 ## 4. Saving
 
-### Save the files in the local directory with desired `./path/output`
+Save the files in the local directory with desired `./path/output`
 
 <!-- - To save the videos in the local directory please set the `out_dir` at **line86** in the `scene_file_writer.py` as follows, -->
 
-### as `.gif` files
+### 4.1. As `.gif`
 
 ```sh
 manim -pqh scene.py SquareAndCircle -o Z:/Git_PhD/Manimation/output/filename01 --format gif
 ```
 
-### as `.mp4` files
+### 4.2. As `.mp4`
 
 ```sh
 manim -pqh scene.py SquareAndCircle -o Z:/Git_PhD/Manimation/output/filename02 --format mp4
 ```
 
-### as `mp4` with `.png` (-s)
+### 4.3. As `.png` (-s)
 
 ```
 manim -pqh scene.py SquareAndCircle -s -o Z:/Git_PhD/Manimation/output/filename03 --format mp4
@@ -165,38 +171,42 @@ Look through the [example scenes](https://3b1b.github.io/manim/getting_started/e
 
 **Note**, however, that developments are often made to the library without considering backwards compatibility with those old videos. To run an old project with a guarantee that it will work, you will have to go back to the commit which completed that project. -->
 
-## 4. Basic Examples
+## 5. Basic Examples
 
-More examples are can be found ([here](https://docs.manim.community/en/stable/examples.html))
+I have tried some examples listed here. More examples are can be found ([here](https://docs.manim.community/en/stable/examples.html))
 
-### Equations ([Docs](https://docs.manim.community/en/stable/reference/manim.mobject.text.tex_mobject.MathTex.html))
+### 5.1. Equations ([Docs](https://docs.manim.community/en/stable/reference/manim.mobject.text.tex_mobject.MathTex.html))
 
 <center><img src="./output/Equation_ManimCE_v0.18.0.gif" width=500/></center>
 
-### Polygon Transformation
+### 5.2. Polygon Transformation
 
 <center><img src="./output/SquareToCircle_ManimCE_v0.18.1.gif" width=500/></center>
 
-### Writing Text ([Docs](https://docs.manim.community/en/stable/reference/manim.animation.creation.html))
+### 5.3. Writing Text ([Docs](https://docs.manim.community/en/stable/reference/manim.animation.creation.html))
 
 <center><img src="./output/Gif-Text.gif" width=500/></center>
 
-### Graphs ([Docs](https://docs.manim.community/en/stable/reference/manim.mobject.graph.html))
+### 5.4. Graphs ([Docs](https://docs.manim.community/en/stable/reference/manim.mobject.graph.html))
 
-<center><img src="./output/Gif-filename-Graph.gif" width=500/></center>
+<center><img src="./Ideas/LabeledGraph.gif" width=500/></center>
 
-### Numberline
+### 5.5. AreaUnderCurve
 
-https://github.com/user-attachments/assets/4387782c-9c7b-491f-983f-c8f7f55138fd
+<center><img src="./Ideas/AreaUnderCurve.gif" width=500/></center>
 
-## Ideas
+## 6. Ideas
 
-### Idea 01 - Solar System
+### 6.1. Solar System
 
- <center> <img src="./Ideas/SolarSystem.gif" width=500/> 
+ <center> <img src="./Ideas/SolarSystem2.gif" width=500/> 
  </center>
 
-### Idea 02 - Mandelbrot Fractals Pattern
+### 6.2. Mandelbrot Fractals Pattern
+
+### 6.3. ???
+
+### 6.4. ???
 
 ## Documentation
 

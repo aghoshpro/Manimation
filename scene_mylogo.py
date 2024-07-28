@@ -1,31 +1,31 @@
 from manim import *
 
 class MyName(Scene):
-        def construct(self):
-            # Objects with properties
-            nameTXT = Write(Text("Arka", font_size=80));
+    def construct(self):
+        # Objects with properties
+        nameTXT = Write(Text("Arka", font_size=80));
 
-            # latex = Write(MathTex(r"\mathbb{ARKA}", color=WHITE).scale(3).shift(2.25 * LEFT + 1.5 * UP))
-            firstNameTEX = MathTex(r"\mathbb{ARKA}", color=WHITE)
-            lastNameTEX = MathTex(r"\mathbb{GHOSH}", color=WHITE)
+        # latex = Write(MathTex(r"\mathbb{ARKA}", color=WHITE).scale(3).shift(2.25 * LEFT + 1.5 * UP))
+        firstNameTEX = MathTex(r"\mathbb{ARKA}", color=WHITE)
+        lastNameTEX = MathTex(r"\mathbb{GHOSH}", color=WHITE)
 
-            circle = Circle(radius=2, color=GREEN_A, fill_opacity=0.5)  # create a circle
-            square = Square(side_length=4, color=BLUE)  # create a square
+        circle = Circle(radius=2, color=GREEN_A, fill_opacity=0.5)  # create a circle
+        square = Square(side_length=4, color=BLUE)  # create a square
 
-            # Actions of Objects
-            square.rotate(PI / 4)  # rotate a certain amount
-            firstNameTEX.scale(3).shift(2.25 * LEFT + 1.5 * UP)
-            lastNameTEX.scale(3).shift(2.25 * RIGHT + 1.5 * DOWN)
+        # Actions of Objects
+        square.rotate(PI / 4)  # rotate a certain amount
+        firstNameTEX.scale(3).shift(2.25 * LEFT + 1.5 * UP)
+        lastNameTEX.scale(3).shift(2.25 * RIGHT + 1.5 * DOWN)
             
-            # Animation starts here in order 
-            self.play(Write(firstNameTEX))
-            self.play(Create(square))  # animate the creation of the square
-            self.play(Transform(square, circle))  # interpolate the square into the circle
-            self.play(Write(lastNameTEX))
-            self.play(FadeOut(square))  # fade out animation
+        # Animation starts here in order 
+        self.play(Write(firstNameTEX))
+        self.play(Create(square))  # animate the creation of the square
+        self.play(Transform(square, circle))  # interpolate the square into the circle
+        self.play(Write(lastNameTEX))
+        self.play(FadeOut(square))  # fade out animation
+        self.wait(2)
 
-
-class MyLogo(Scene):
+class MyLogoX(Scene):
     def construct(self):
         # Objects with properties
         text = Write(Text("Arka", font_size=80));
@@ -45,11 +45,11 @@ class MyLogo(Scene):
         self.play(Create(square))  # animate the creation of the square
         self.play(Transform(square, circle))  # interpolate the square into the circle
         self.play(FadeOut(square))  # fade out animation
-
+        self.wait(2)
 
 class SolarSystem(Scene):
     def construct(self):
-        text = Write(Text("A", font_size=90, color=GOLD_A));
+        text = Write(Text("A", font_size=90, color=GOLD_A)); #text = MathTex(r"\mathbb{A}", font_size=125, color=GOLD_A)
         text1 = Write(Text("R", font_size=90, color=GOLD_B).shift(RIGHT * 1));
         text2 = Write(Text("K", font_size=90, color=GOLD_C).shift(RIGHT * 2));
         text3 = Write(Text("A", font_size=90, color=GOLD_D).shift(RIGHT * 3));
@@ -59,12 +59,12 @@ class SolarSystem(Scene):
         circle3= Circle(radius=3, color=BLUE_D)
 
         dot = Dot()
-        dot1 = Dot()
-        dot2 = Dot()
-        dot3 = Dot()
+        dot1 = Dot().scale(2)
+        dot2 = Dot().scale(2)
+        dot3 = Dot().scale(2)
         self.add(dot)
         self.play(FadeOut(dot)) 
-        self.play(text)
+        self.play(text) # self.play(Write(text)) if tex
 
         self.play(GrowFromCenter(circle1))
         self.play(MoveAlongPath(dot1, circle1), run_time=1, rate_func=linear)
@@ -81,3 +81,4 @@ class SolarSystem(Scene):
         self.play(FadeOut(dot3)) 
         self.play(text3)
         self.play(Write(Text("A", font_size=90, color=RED)))
+        self.wait(2)

@@ -49,12 +49,16 @@ class Equation(Scene):
 
 # ########## GRAPH ###################################################################################################################
 
-class ChangeGraphLayout(Scene):
+class LabeledGraph(Scene):
     def construct(self):
-        G = Graph([1, 2, 3, 4, 5], [(1, 2), (2, 3), (3, 4), (4, 5)],
-                  layout={1: [-2, 0, 0], 2: [-1, 0, 0], 3: [0, 0, 0],
-                          4: [1, 0, 0], 5: [2, 0, 0]}
-                  )
+        vertices = [1, 2, 3, 4, 5, 6]
+        edges = [(1, 2), (2, 3), (3, 4), (3, 6), (4, 5)]
+        lt = {1: [-2, 0, 0], 2: [-1, 0, 0], 3: [0, 0, 0], 4: [1, 0, 0], 5: [2, 0, 0], 6:[0, 1, 0]}
+        G = Graph(vertices, edges, layout=lt, layout_scale=3,
+                  labels=True, vertex_config={3: {"fill_color": RED}, 6: {"fill_color": RED}},
+                  edge_config={(1, 2): {"stroke_color": BLUE_D},
+                               (3, 6): {"stroke_color": YELLOW},
+                               (4, 5): {"stroke_color": BLUE_D}})
         self.play(Create(G))
         self.play(G.animate.change_layout("circular"))
         self.wait()
