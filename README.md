@@ -21,7 +21,7 @@ We use [Manim Community Edition](https://github.com/ManimCommunity/manim/), fork
 
 ## Official Installations
 
-One can follow  the instructions to install [ManimCommunity](https://docs.manim.community/en/stable/installation.html) for any Os. You can also follow the step-by-step win-installation that worked for me.
+One can follow the instructions to install [ManimCommunity](https://docs.manim.community/en/stable/installation.html) for any Os. You can also follow the step-by-step win-installation that worked for me.
 
 <!-- Manim runs on Python 3.7 or higher.
 
