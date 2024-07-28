@@ -106,7 +106,7 @@ choco install miktex.install
 
 * **Output**
 
-  <img src="./output/CreateCircle_ManimCE_v0.18.1.gif"/>
+  <img src="./output/CreateCircle_ManimCE_v0.18.1.gif" width=500/>
 
 * To check the structure and options of `manim` run the following,
 
@@ -167,23 +167,25 @@ Look through the [example scenes](https://3b1b.github.io/manim/getting_started/e
 
 **Note**, however, that developments are often made to the library without considering backwards compatibility with those old videos. To run an old project with a guarantee that it will work, you will have to go back to the commit which completed that project. -->
 
-## 4. More Basic Examples
+## 4. Basic Examples
+
+More examples are can be found ([here](https://docs.manim.community/en/stable/examples.html))
 
 ### Equations ([Docs](https://docs.manim.community/en/stable/reference/manim.mobject.text.tex_mobject.MathTex.html))
 
-<img src="./output/Equation_ManimCE_v0.18.0.gif"/>
+<center><img src="./output/Equation_ManimCE_v0.18.0.gif" width=500/></center>
 
 ### Polygon Transformation
 
-<img src="./output/SquareToCircle_ManimCE_v0.18.1.gif"/>
+<center><img src="./output/SquareToCircle_ManimCE_v0.18.1.gif" width=500/></center>
 
 ### Writing Text ([Docs](https://docs.manim.community/en/stable/reference/manim.animation.creation.html))
 
-<img src="./output/Gif-Text.gif"/>
+<center><img src="./output/Gif-Text.gif" width=500/></center>
 
 ### Graphs ([Docs](https://docs.manim.community/en/stable/reference/manim.mobject.graph.html))
 
-<img src="./output/Gif-filename-Graph.gif"/>
+<center><img src="./output/Gif-filename-Graph.gif" width=500/></center>
 
 ### Numberline
 
@@ -191,7 +193,10 @@ https://github.com/user-attachments/assets/4387782c-9c7b-491f-983f-c8f7f55138fd
 
 ## Ideas
 
-### Idea 01 - Simple Area Under Curve
+### Idea 01 - Solar System
+
+ <center> <img src="./Ideas/SolarSystem.gif" width=500/> 
+ </center>
 
 ### Idea 02 - Mandelbrot Fractals Pattern
 
