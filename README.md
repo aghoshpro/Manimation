@@ -23,14 +23,14 @@ We use [Manim Community Edition](https://github.com/ManimCommunity/manim/), fork
 
 > We will follow the instructions to install [ManimCommunity](https://docs.manim.community/en/stable/installation.html)
 
-OR
+**OR**
 
 <!-- Manim runs on Python 3.7 or higher.
 
 System requirements are [FFmpeg](https://ffmpeg.org/), [OpenGL](https://www.opengl.org/) and [LaTeX](https://www.latex-project.org) (optional, if you want to use LaTeX).
 For Linux, [Pango](https://pango.gnome.org) along with its development headers are required. See instruction [here](https://github.com/ManimCommunity/ManimPango#building). -->
 
-## Local Installation in Windows
+### For Windows
 
 <!-- <html><div style="background-color:green;"><strong>&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Working Example</strong></div></html> -->
 
