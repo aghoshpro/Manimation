@@ -204,9 +204,13 @@ I have tried some examples listed here. More examples are can be found ([here](h
 
 ### 6.2. Mandelbrot Fractals Pattern
 
-### 6.3. Drawing Anything with Fourier Transformation with epicycles
+### 6.3. Draw Anything with Fourier Transformation with epicycles
 
-- [Fourier Epicycles Drawing](https://www.myfourierepicycles.com/)
+- [Fourier Epicycles Drawing 01](https://github.com/zavden/manim-fourier-tutorial/tree/main)
+- [Fourier Epicycles Drawing 02](https://www.myfourierepicycles.com/)
+
+ <center> <img src="./Ideas/FourierOfPathsSVG.gif" width=500/> 
+ </center>
 
 ### 6.4. ???
 
