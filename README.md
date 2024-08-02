@@ -214,13 +214,27 @@ I have tried some examples listed here. More examples are can be found ([here](h
 
 ### 6.4. ???
 
+## Resources
+
+These are some useful resources that can inspire us to create more beautiful manimation using Manim. Please add more if you find any other interesting links.
+
+### Blogs
+
+- [Medium 01](https://medium.com/innovies-club/manim-pythons-secret-weapon-for-breathtaking-math-animations-82766173ed67)
+
+### YT
+
+- [Varniex](https://www.youtube.com/@Varniex)
+- [TheoremofBeethoven](https://www.youtube.com/@TheoremofBeethoven)
+- [Benjamin Hackl](https://www.youtube.com/@behackl)
+
 ## Documentation
 
-Documentation is in progress at [Docs](https://docs.manim.community/en/stable/)
+Please check [Docs](https://docs.manim.community/en/stable/)
 
-<!-- Documentation is in progress at [3b1b.github.io/manim](https://3b1b.github.io/manim/). And there is also a Chinese version maintained by [**@manim-kindergarten**](https://manim.org.cn): [docs.manim.org.cn](https://docs.manim.org.cn/) (in Chinese).
+<!-- Documentation is in progress at [3b1b.github.io/manim](https://3b1b.github.io/manim/). And there is also a Chinese version maintained by [**@manim-kindergarten**](https://manim.org.cn): [docs.manim.org.cn](https://docs.manim.org.cn/) (in Chinese).-->
 
-[manim-kindergarten](https://github.com/manim-kindergarten/) wrote and collected some useful extra classes and some codes of videos in [manim_sandbox repo](https://github.com/manim-kindergarten/manim_sandbox). -->
+[manim-kindergarten](https://github.com/manim-kindergarten/) wrote and collected some useful extra classes and some codes of videos in [manim_sandbox repo](https://github.com/manim-kindergarten/manim_sandbox).
 
 ## Contributing
 
